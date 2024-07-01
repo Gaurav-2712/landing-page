@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <title>Vite App</title>
+  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
 </head>
 
 <body>
@@ -17,8 +18,8 @@
 
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
           id="mobile-nav-toggle">
-          <img class="icon-hamburger" src="./images/icon-hamburger.svg" alt="" aria-label="false">
-          <img class="icon-close" src="./images/icon-close.svg" alt="" aria-label="true">
+          <!-- <img class="icon-hamburger" src="" alt="" aria-label="false">
+          <img class="icon-close" src="" alt="" aria-label="true"> -->
           <span class="visually-hidden">Menu</span>
         </button>
 
@@ -38,29 +39,32 @@
 
   <main>
 
-    <section class="padding-block-900">
+    <section class="hero | padding-block-900 text-center-sm-only">
       <div class="container">
-        <div class="even-columns">
+        <div class="even-columns" data-order="inverse">
 
-          <div class="flow">
+          <div class="flow ">
             <h1 class="fs-primary-heading fw-bold">Bring everyone together to build better products.</h1>
             <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in
               view.</p>
-            <button class="button">Get Started</button>
+
+              <div class="center">
+                <button class="button">Get Started</button> 
+              </div>
           </div>
 
-          <div>
-            <img src="./images/illustration-intro.svg" alt="">
+          <div class="hero_image">
+            <img src="./images/illustration-intro.svg" alt="" class="mx-auto">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="padding-block-900">
+    <section class="sales-point | padding-block-900">
       <div class="container">
         <div class="even-columns">
 
-          <div class="flow">
+          <div class="sales_point_blob | flow text-center-sm-only margin-bottom-700" style="--flow-spacer : 1.5rem">
             <h1 class="fs-secondary-heading fw-bold">What's different about Manage?</h1>
             <p>Manage provides all the functionality your team needs, without the complexity. Our software is
               tailor-made for modern digital product teams.
@@ -71,24 +75,26 @@
             <ul role="list" class="number-list | flow">
               <li>
                 <div class="flow" style="--flow-spacer: 1em">
-                  <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
-                  <p data-width="wide">See how your day-to-day tasks fit into the wider vision. Go from tracking
+                  <h3 class="number-item_title | fs-600 fw-bold">Track company-wide progress</h3>
+                  <p class="number-item_body" data-width="wide">See how your day-to-day tasks fit into the wider vision. Go from tracking
                     progress at the milestone
                     level all the way down to the smallest of details. Never lose sight of the bigger picture again.</p>
                 </div>
               </li>
               <li>
                 <div class="flow" style="--flow-spacer: 1em">
-                  <h3 class="fs-600 fw-bold">Advanced built-in reports </h3>
-                  <p data-width="wide">Set internal delivery estimates and track progress toward company goals. Our
+                  <h3 class="number-item_title | fs-600 fw-bold">Advanced built-in reports </h3>
+                  <p class="number-item_body"  
+                  data-width="wide">Set internal delivery estimates and track progress toward company goals. Our
                     customizable dashboard
                     helps you build out the reports you need to keep key stakeholders informed.</p>
                 </div>
               </li>
               <li>
                 <div class="flow" style="--flow-spacer: 1em">
-                  <h3 class="fs-600 fw-bold">Everything you need in one place</h3>
-                  <p data-width="wide">Stop jumping from one service to another to communicate, store files, track tasks
+                  <h3 class="number-item_title | fs-600 fw-bold">Everything you need in one place</h3>
+                  <p class="number-item_body"  
+                  data-width="wide">Stop jumping from one service to another to communicate, store files, track tasks
                     and share
                     documents. Manage offers an all-in-one team productivity solution.</p>
                 </div>
@@ -99,13 +105,46 @@
       </div>
     </section>
 
-    <section class="carouse padding-block-700">
-      <h2 class="fs-secondary-heading">What they've said</h2>
+    <section class="carouse padding-block-900 text-center container ">
+      <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
       <!-- carousel space -->
-      <button class="button">Get Started</button>
+      <ul class="slider ">
+        <li>
+          <img src="./public/images/avatar-ali.png" alt="">
+          <div class="slider-content | flow" style="--flow-spacer : .7rem">
+            <h3 class="fw-bold">Ali Bravo</h3>
+          <p data-type="wide">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+          </div>
+        </li>
+        <li>
+          <img src="./public/images/avatar-ali.png" alt="">
+          <div class="slider-content | flow" style="--flow-spacer : .4rem">
+            <h3 class="fw-bold">Ali Bravo</h3>
+          <p data-type="wide">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+          </div>
+        </li>
+        <li>
+          <img src="./public/images/avatar-ali.png" alt="">
+          <div class="slider-content | flow" style="--flow-spacer : .4rem">
+            <h3 class="fw-bold">Ali Bravo</h3>
+          <p data-type="wide">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+          </div>
+        </li>
+        <li>
+          <img src="./public/images/avatar-ali.png" alt="">
+          <div class="slider-content | flow" style="--flow-spacer : .4rem">
+            <h3 class="fw-bold">Ali Bravo</h3>
+          <p data-type="wide">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+          </div>
+        </li>
+
+      </ul>
+      <div class="center">
+        <button class="button text-center" >Get Started</button>
+      </div>
     </section>
 
-    <section class="cta | bg-accent-400 text-neutral-100 padding-block-900">
+    <section class="cta | bg-accent-400 text-neutral-100 padding-block-900 margin-top-900">
       <div class="container">
         <div class="even-columns vertical-align-center">
           <div>
@@ -177,16 +216,16 @@
             </ul>
           </nav>
         </div>
-        <div class="primary-footer-form">
-          <form action="">
+        <!-- <div class="primary-footer-form"> -->
+          <form action="" class="primary-footer-form">
             <input type="email" name="email" id="">
             <button class="button" data-shadow="no-glow">Go</button>
           </form>
-          <p>Copyright 2020. All Rights Reserved </p>
-        </div>
+          <p class="primary-footer-copyright">Copyright 2020. All Rights Reserved </p>
+        <!-- </div> -->
       </div>
   </footer>
   <script type="module" src="/main.js"></script>
+  <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
 </body>
-
 </html>
