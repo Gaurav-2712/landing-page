@@ -590,8 +590,8 @@ input[type="email"]{
 
 @media (min-width : 47em) {
   .hero_image::before{
-    width: 40rem;
-    aspect-ratio: 2.5/1.7;
+    width: 70rem;
+    aspect-ratio: 2/1.9;
   }
 }
 
@@ -606,7 +606,7 @@ input[type="email"]{
   zoom: 40%;
   position: absolute;
   z-index: -1;
-  left: 70%;
+  left: 100%;
   bottom: 100%;
   width: 100px;
 }
@@ -616,9 +616,9 @@ input[type="email"]{
     content: url('./images/bg-tablet-pattern.svg');
     zoom: 70%;
     z-index: -1;
-    left: -600px;
+    left: -750px;
     top: 42%;
-    width: 100px;
+    width: 140px;
   }
 }
 
