@@ -408,7 +408,7 @@ input[type="email"]{
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('./images/bg-tablet-pattern.svg') , url('./images/bg-tablet-pattern.svg');
+  background-image: url('./public/images/bg-tablet-pattern.svg') , url('./public/images/bg-tablet-pattern.svg');
   z-index: -1;
   background-position: -15rem -5rem , 100rem -40rem;
   background-repeat: no-repeat;
@@ -578,7 +578,7 @@ input[type="email"]{
   max-width: 70vh;
   max-width: 70dvh;
   aspect-ratio: 1/1.2;
-  background-image: url('./images/bg-tablet-pattern.svg');
+  background-image: url('./public/images/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
   background-position: bottom left;
 }
@@ -602,7 +602,7 @@ input[type="email"]{
 }
 
 .sales_point_blob::before{
-  content: url('./images/bg-tablet-pattern.svg');
+  content: url('./public/images/bg-tablet-pattern.svg');
   zoom: 40%;
   position: absolute;
   z-index: -1;
@@ -613,7 +613,7 @@ input[type="email"]{
 
 @media (min-width: 47em) {
   .sales_point_blob::before{
-    content: url('./images/bg-tablet-pattern.svg');
+    content: url('./public/images/bg-tablet-pattern.svg');
     zoom: 70%;
     z-index: -1;
     left: -750px;
